@@ -1,3 +1,5 @@
+import sys
+sys.path.append('C:\\NSR\\DeepPath_GYM\\scripts')
 
 from math import inf
 from typing import Optional

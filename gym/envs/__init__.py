@@ -4,22 +4,14 @@ from gym.envs.registration import make, register, registry, spec
 # Hook to load plugins from entry points
 _load_env_plugins()
 
-# 2D Navigation
-# ----------------------------------------
-
-register(
-    id = 'Particles2D-v1',
-    entry_point='learn2learn.gym.envs.particles.particles_2d:Particles2DEnv',
-    max_episode_steps=100
-)
-
 # KG_env
 # ----------------------------------------
 register(
-    id="Knowledgegraph_gym-v0",
+    id="KG_task-v1",
     entry_point="gym.envs.KG_env.env:Knowledgegraph_gym",
     max_episode_steps=1000,
 )
+
 
 # Classic
 # ----------------------------------------
